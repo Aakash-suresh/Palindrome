@@ -25,31 +25,27 @@ Save the program and run the program in visual studio 2022.
 ## Program:
 ```
 using System;
-
-namespace ConsoleApp1
+namespace palindrome
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            int n,temp,rem,rev=0;
-            Console.WriteLine("Enter the Number : ");
-            n = Convert.ToInt32(Console.ReadLine());
-            temp = n;
-            while(n!=0)
+            string s, revs = "";
+            Console.WriteLine("Enter the string");
+            s = Console.ReadLine();
+            s = s.ToLower();
+            for (int i = s.Length - 1; i >= 0; i--)
             {
-                rem = n % 10;
-                rev = rev * 10 + rem;
-                n = n / 10;
+                revs += s[i];
             }
-            if(temp==rev)
+            if (revs == s)
             {
-               Console.WriteLine("The Entered Number is Palindrome Number");
+                Console.WriteLine("The entered string is Palindrome");
             }
             else
             {
-                Console.WriteLine("The Entered Number is not a Palindrome Number");
+                Console.WriteLine("The entered string is not Palindrome");
             }
         }
     }

@@ -52,8 +52,9 @@ namespace palindrome
 }
 
 ```
-## Output:
+## Output 1:
 ![output](Output.png)
+## Output 2:
 ![output](Out1.png)
 ## Result:
 Thus the C# program to display whether the given string is Palindrome or not is executed successfully.
